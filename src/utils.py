@@ -16,6 +16,7 @@ days_num = 12
 stock_length = 9
 data_root = "/home/ingrid/Data/stockpredict_20191105/"
 dict_path = "/home/ingrid/Model/glove_ch/{}_vectors_{}.txt".format(dataset, vectors_dim)
+trade_data_root = data_root + "trade_data/"
 
 def get_evaluation(y_true, y_prob, list_metrics):
     y_pred = np.argmax(y_prob, -1)
